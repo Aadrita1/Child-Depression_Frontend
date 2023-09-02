@@ -1,0 +1,119 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #f8699d;
+    padding: 0 15px;
+  }
+.logo {
+    width: 40px;
+    height: auto;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+nav ul li:hover {
+    color: #ff38bd;
+}
+nav .visibility-desktop {
+    display: block;
+}
+nav .visibility-mobile {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav .visibility-desktop {
+      display: none;
+    }
+    nav .visibility-mobile {
+      display: block;
+    }
+    nav .visibility-mobile img {
+      width: 30px;
+    }
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.75rem;
+      height: 100vh;
+      position: inherit;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      background-color: #f8699d;
+      padding-top: 10px;
+      transition: 2s ease-in-out;
+    }
+    .mobile-nav ul li {
+      padding-bottom: 3rem;
+      list-style: none;
+    }
+    .mobile-nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff, #f4bcd0);
+  }
+  .heading1 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fc10ad;
+    letter-spacing: 0.05em;
+  }
+  .heading2 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ff38bd;
+    letter-spacing: 0.05em;
+  }
+  .get-started-button {
+    margin-top: 2.5rem;
+    background-color: #ff65a3;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    width: 250px;
+    height: 75px;
+    font-size: 1.5rem;
+  }
+  .link4{
+    color: #ffff;
+    text-decoration: none;
+}
