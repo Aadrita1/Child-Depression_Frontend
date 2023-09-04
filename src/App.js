@@ -327,7 +327,7 @@ function App() {
             <label className='label'>Which year of school are you in?</label>
             <input
               type="number"
-              placeholder="Enter number between 1 to 10"
+              placeholder="Enter number between 1 to 12"
               min="0"
               max = "10"
               value={schoolyear}
@@ -354,7 +354,7 @@ function App() {
               className="bmi_class"
               onChange={(e) => setBmi(e.target.value)}
             />
-            <label className='label'>What is your PHQ score?</label>
+            <label className='label'>What is your PHQ score? <a href='https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9' className='anchor' target="blank">Check your PHQ Score</a></label>
             <input
               type="number"
               placeholder="Enter a PHQ score between 0 to 27"
@@ -391,7 +391,7 @@ function App() {
               <option value="1">Yes</option>
               <option value="0">No</option>
             </select>
-            <label className='label'>What is your GAD score?</label>
+            <label className='label'>What is your GAD score? <a href='https://www.mdcalc.com/calc/1727/gad7-general-anxiety-disorder7' className='anchor' target="blank">Check your GAD Score</a></label>
             <input
               type="number"
               placeholder="Enter a GAD score between 0 to 21"
@@ -428,7 +428,7 @@ function App() {
               <option value="1">Yes</option>
               <option value="0">No</option>
             </select>
-            <label className='label'>What is your epworth score?</label>
+            <label className='label'>What is your Epworth score? <a href='https://qxmd.com/calculate/calculator_85/epworth-sleepiness-scale' className='anchor' target="blank">Check your Epworth Score</a></label>
             <input
               type="number"
               placeholder="Enter an epworth-score between 0 to 32"
