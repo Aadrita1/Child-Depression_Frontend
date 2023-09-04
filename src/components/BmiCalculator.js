@@ -25,8 +25,12 @@ const BmiCalculator = () => {
       setBmiCategory('Normal weight');
     } else if (bmiValue >= 25 && bmiValue <= 29.9) {
       setBmiCategory('Overweight');
-    } else {
-      setBmiCategory('Obesity');
+    } else if(bmiValue >= 30 && bmiValue <=34.99) {
+      setBmiCategory('Class 1 Obese');
+    } else if(bmiValue >= 35 && bmiValue <=39.99) {
+      setBmiCategory('Class 2 Obese');
+    } else{
+      setBmiCategory('Class 3 Obese');
     }
   };
 
